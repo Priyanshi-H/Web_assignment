@@ -1,0 +1,194 @@
+/* -------- Reset and Base Styles -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* -------- Links -------- */
+  a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #005fa3;
+  }
+  
+  /* -------- Containers -------- */
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* -------- Header -------- */
+  .site-header {
+    background: linear-gradient(to right, #0077cc, #00c6ff);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .site-header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  
+  /* -------- Navigation -------- */
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  .main-nav a {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* -------- Main Content -------- */
+  .main-content {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .main-content h2 {
+    font-size: 2rem;
+    color: #0077cc;
+    margin-bottom: 20px;
+  }
+  
+  .main-content p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .list-section ol,
+  .list-section ul {
+    padding-left: 20px;
+  }
+  
+  .list-section li {
+    margin-bottom: 20px;
+  }
+  
+  .list-section h3 {
+    color: #0077cc;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  /* -------- Buttons -------- */
+  .btn {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+  }
+  
+  /* -------- Forms (For Contact Page) -------- */
+  form {
+    margin-top: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+  }
+  
+  form button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+  }
+  
+  /* -------- Footer -------- */
+  .site-footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  .site-footer a {
+    color: #ccc;
+  }
+  
+  .site-footer a:hover {
+    color: #fff;
+  }
+  
+  /* -------- Responsive Design -------- */
+  @media (max-width: 768px) {
+    .main-nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .main-content {
+      padding: 20px;
+    }
+  
+    .site-header h1 {
+      font-size: 2rem;
+    }
+  }
+  

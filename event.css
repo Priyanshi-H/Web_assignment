@@ -1,0 +1,60 @@
+.event-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fafafa;
+}
+
+.event-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 20px;
+}
+
+.event-details h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+.event-details .date {
+  font-weight: bold;
+  color: #007BFF;
+  margin-top: 10px;
+}

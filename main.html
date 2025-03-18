@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Dublin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="brain.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Welcome to Dublin</h1>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="attraction.html">Attractions</a></li>
+          <li><a href="resturant.html">Restaurants</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <section class="intro">
+      <h2>Explore Dublin!</h2>
+      <p>Discover the best places to visit and dine in Dublin.</p>
+    </section>
+
+    <section class="fare-checker">
+      <h3>Fare Checker</h3>
+      <form id="fareForm" onsubmit="event.preventDefault(); checkFare();">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age" required min="0">
+        </div>
+        <button type="submit" class="btn">Check Fare</button>
+      </form>
+      <p id="fareResult" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="food-preference">
+      <h3>Food Preference</h3>
+      <form id="foodForm" onsubmit="event.preventDefault(); displayFood();">
+        <div class="form-group">
+          <label for="foodName">Your Name:</label>
+          <input type="text" id="foodName" name="foodName" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="cuisine">Favorite Cuisine:</label>
+          <input type="text" id="cuisine" name="cuisine" placeholder="Enter your favorite cuisine" required>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <textarea id="foodOutput" readonly aria-label="Food Preference Output" placeholder="Your preferences will appear here..."></textarea>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Discover Dublin. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
